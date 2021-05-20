@@ -50,7 +50,7 @@ public class StudentController
 			Student searchStudent = studentservice.getStudentById(student.getStudentId());
 			studentResult = searchStudent!= null ? searchStudent : new Student();
 			break;
-		default:out. println(String)
+		default:out. println("this is logger");
 		}
 		map.put("student", studentResult);
 		map.put("studentList", studentservice.getAllStudents());
