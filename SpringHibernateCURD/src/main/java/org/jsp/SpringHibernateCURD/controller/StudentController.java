@@ -50,6 +50,7 @@ public class StudentController
 			Student searchStudent = studentservice.getStudentById(student.getStudentId());
 			studentResult = searchStudent!= null ? searchStudent : new Student();
 			break;
+		Default: "Sorry option not availabel";
 		}
 		map.put("student", studentResult);
 		map.put("studentList", studentservice.getAllStudents());
