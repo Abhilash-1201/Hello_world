@@ -50,7 +50,7 @@ public class StudentController
 			Student searchStudent = studentservice.getStudentById(student.getStudentId());
 			studentResult = searchStudent!= null ? searchStudent : new Student();
 			break;
-		default:log.debug("This is an debug message");  
+		default:out. println(String)
 		}
 		map.put("student", studentResult);
 		map.put("studentList", studentservice.getAllStudents());
