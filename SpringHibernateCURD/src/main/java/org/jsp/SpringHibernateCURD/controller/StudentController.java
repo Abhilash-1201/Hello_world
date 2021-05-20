@@ -50,8 +50,7 @@ public class StudentController
 			Student searchStudent = studentservice.getStudentById(student.getStudentId());
 			studentResult = searchStudent!= null ? searchStudent : new Student();
 			break;
-		default:
-       		 statementDefault;
+		default:System.out.println("sorry wrong option!!");  
 		}
 		map.put("student", studentResult);
 		map.put("studentList", studentservice.getAllStudents());
