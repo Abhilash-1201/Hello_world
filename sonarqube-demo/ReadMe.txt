@@ -1,0 +1,1 @@
+Its about integrating sonarqube into a spring boot application to publish the sonar results.
