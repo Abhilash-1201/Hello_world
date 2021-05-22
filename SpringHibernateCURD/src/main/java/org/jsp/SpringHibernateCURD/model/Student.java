@@ -1,4 +1,4 @@
-package org.jsp.SpringHibernateCURD.model;
+package org.jsp.springcurdexample.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
