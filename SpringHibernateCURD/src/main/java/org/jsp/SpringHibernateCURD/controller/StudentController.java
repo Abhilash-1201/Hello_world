@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class StudentController 
 {
-	 
+	 private static final String STUDENT = "student"; 
 	@Autowired
 	private StudentService studentservice;
 	
@@ -23,10 +23,10 @@ public class StudentController
 	public String setupform(Map<String,Object> map)
 	{
 		Student student = new Student();
-		map.put("student", student);
+		map.put(STUDENT, student);
 		map.put("studentList",studentservice.getAllStudents());
 		
-		return "student";
+		return STUDENT;
 		
 	}
 	@RequestMapping(value="/student.do" , method=RequestMethod.POST)
@@ -53,9 +53,9 @@ public class StudentController
 			break;
 		default: System.out.println("this is logger");
 		}
-		map.put("student", studentResult);
+		map.put(STUDENT, studentResult);
 		map.put("studentList", studentservice.getAllStudents());
-		return "student";
+		return STUDENT;
 		
 	}
 }
