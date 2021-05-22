@@ -1,4 +1,4 @@
-package org.jsp.SpringHibernateCURD.serviceImpl;
+package org.jsp.springcurdexample.serviceimpl;
 
 import java.util.List;
 
