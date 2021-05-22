@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class StudentController 
 {
-	private static final String STUDENT = "student"; 
+	 
 	@Autowired
 	private StudentService studentservice;
 	
@@ -23,7 +23,7 @@ public class StudentController
 	public String setupform(Map<String,Object> map)
 	{
 		Student student = new Student();
-		map.put("STUDENT", student);
+		map.put("student", student);
 		map.put("studentList",studentservice.getAllStudents());
 		
 		return STUDENT;
@@ -53,7 +53,7 @@ public class StudentController
 			break;
 		default: System.out.println("this is logger");
 		}
-		map.put(STUDENT, studentResult);
+		map.put("student", studentResult);
 		map.put("studentList", studentservice.getAllStudents());
 		return STUDENT;
 		
