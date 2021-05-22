@@ -1,4 +1,4 @@
-package org.jsp.SpringHibernateCURD.Dao;
+package org.jsp.springcurdexample.dao;
 
 import java.util.List;
 
