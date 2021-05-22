@@ -1,4 +1,4 @@
-package org.jsp.SpringHibernateCURD.controller;
+package org.jsp.springcurdexample.controller;
 
 import java.util.Map;
 import java.io.*;
