@@ -51,7 +51,7 @@ public class StudentController
 			Student searchStudent = studentservice.getStudentById(student.getStudentId());
 			studentResult = searchStudent!= null ? searchStudent : new Student();
 			break;
-			default: System.out.println("error");
+		
 		}
 		map.put(STUDENT, studentResult);
 		map.put("studentList", studentservice.getAllStudents());
