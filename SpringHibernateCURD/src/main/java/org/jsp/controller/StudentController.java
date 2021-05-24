@@ -54,7 +54,7 @@ public class StudentController
 			Student searchStudent = studentservice.getStudentById(student.getStudentId());
 			studentResult = searchStudent!= null ? searchStudent : new Student();
 			break;
-			default: logger.log("my message");
+			default:
 		
 		}
 		map.put(STUDENT, studentResult);
