@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class StudentController 
 {
 	private static final String STUDENT = "student"; 
+	private static Logger logger = Logger;
 	@Autowired
 	private StudentService studentservice;
 	
@@ -53,7 +54,7 @@ public class StudentController
 			Student searchStudent = studentservice.getStudentById(student.getStudentId());
 			studentResult = searchStudent!= null ? searchStudent : new Student();
 			break;
-			default: System.err.close();
+			default: logger.log("my message");
 		
 		}
 		map.put(STUDENT, studentResult);
