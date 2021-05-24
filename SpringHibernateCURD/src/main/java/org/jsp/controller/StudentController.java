@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class StudentController 
 {
 	private static final String STUDENT = "student"; 
-	private static Logger logger = Logger;
+	
 	@Autowired
 	private StudentService studentservice;
 	
