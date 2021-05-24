@@ -51,6 +51,7 @@ public class StudentController
 			Student searchStudent = studentservice.getStudentById(student.getStudentId());
 			studentResult = searchStudent!= null ? searchStudent : new Student();
 			break;
+		default: System.err.close();
 		
 		}
 		map.put(STUDENT, studentResult);
